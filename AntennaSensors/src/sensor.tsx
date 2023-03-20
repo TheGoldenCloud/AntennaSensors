@@ -32,15 +32,32 @@ function Sensor() {
                     </div>
                     
                   </div><br /> */}
-                  
-                  <div className="form-check form-switch" style={{ maxWidth:"fit-content" }}>
-                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Auto / Manual</label>
+                  <div className="row">
+                    <div className="col-6">
+                        <a href="/monitor/write/6475/1" id="btnUkljU1" className="btn btn-danger">ON</a>
                     </div>
+                    <div className="col-6">
+                        <a href="/monitor/write/6475/1" id="btnUkljU1" className="btn btn-danger">OFF</a>
+                    </div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-6">
                     <div className="form-check form-switch">
-                        <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Auto / Manual</label>
+                    <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Auto/Manual</label>
+                </div>
                     </div>
+                    <div className="col-6">
+                    <div className="form-check form-switch">
+                    <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Auto/Manual</label>
+                </div>
+                    </div>
+                  </div>
+
+                  
+                    
 
 
                   <table className="table table-bordered">
