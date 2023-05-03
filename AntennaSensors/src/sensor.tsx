@@ -1,12 +1,13 @@
 import React from 'react'
 import "bootstrap/dist/css/bootstrap.css"
+import SensorInput from "./SensorInput"
 
 function Sensor() {
   return (
     <div id="antena1">
     <div className="card text-center" style={{ width: "18rem" }}>
       <div className="container">
-        <img className="card-img-top" id="imgPlace1" src="./public/radio.png" alt="Radio img" />
+        <img className="card-img-top" id="imgPlace1" src="./radio.png" alt="Radio img" />
       </div>
       <div className="card-body" style={{ paddingBottom: 5 }}>
         <h5 className="card-title">Antenna 1</h5>
@@ -40,27 +41,16 @@ function Sensor() {
               <th scope="row">Nominal current:</th>
               <td><span id="nnv1" /><span>A</span></td>
             </tr>
-
-            
-
-            
-
-            
-            
-              
-            
-            
           </tbody>
         </table>
 
-        
-
-      <div className="input-group mb-3">
+      {/* <div className="input-group mb-3">
         <input type="text" className="form-control" placeholder="Nominal current" aria-label="Recipient's username" aria-describedby="button-addon2" />
         <button className="btn btn-outline-primary" type="button" id="button-addon2">Send</button>
-      </div>
-        
+      </div> */}
 
+       <SensorInput  /> 
+      
       </div>
     </div>
   </div>
