@@ -1,16 +1,16 @@
 import React,{ useState }  from 'react'
 import "bootstrap/dist/css/bootstrap.css"
 
-function Sensor() {
+function SensorInput() {
 
   let [currentValue,setCurrentValue] = useState(0);
 
   let sendData = () => {
-    document.getElementById("button-addon2")?.addEventListener("click", () =>{
-      setCurrentValue(currentValue);
-      //document.getElementById("currentInput").value;
-      
-      
+    let btn = document.getElementById("button-addon2") as HTMLButtonElement;
+    let input  = document.getElementById("currentInput") as HTMLInputElement;
+
+    btn.addEventListener("click", () =>{
+      setCurrentValue(parseInt(input.value));
     })
   }
 
@@ -22,4 +22,4 @@ function Sensor() {
   )
 }
 
-export default Sensor
+export default SensorInput
